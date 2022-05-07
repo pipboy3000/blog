@@ -1,0 +1,44 @@
+.container {
+  color: var(--text-color);
+  background-color: #48697D;
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+
+.image {
+  border-radius: 999px;
+}
+
+.header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--stroke-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #9BBF95;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  line-height: 1;
+}
