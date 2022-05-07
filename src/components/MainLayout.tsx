@@ -3,7 +3,11 @@ import styles from './MainLayout.module.css';
 import Header from './Header';
 import Footer from './Footer';
 
-const MainLayout: React.FC = ({ children }) => {
+interface Props {
+  children: React.ReactNode;
+}
+
+const MainLayout: React.FC<Props> = ({ children }) => {
   return (
     <div className={styles.container}>
       <Header />
