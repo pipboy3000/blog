@@ -46,3 +46,12 @@ p {
 img {
 	max-width: 100%;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.5rem;
+}
