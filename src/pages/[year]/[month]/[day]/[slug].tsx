@@ -1,6 +1,5 @@
 import { NextPage, InferGetStaticPropsType, GetStaticPropsContext } from 'next';
 import { useRouter } from 'next/router';
-import styles from '../../../../styles/Home.module.css';
 import Head from 'next/head';
 import ErrorPage from 'next/error';
 import mdToHtml from '../../../../lib/mdToHtml';
@@ -54,7 +53,7 @@ const Post: NextPage<Props> = ({ post }) => {
   }
 
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>{post.title} - count0.org</title>
         <CommonMeta />
@@ -66,7 +65,7 @@ const Post: NextPage<Props> = ({ post }) => {
           content={post.content}
         ></Article>
       </MainLayout>
-    </div>
+    </>
   );
 };
 
