@@ -1,6 +1,6 @@
 :root {
   --background-color: #ECE2D0;
-  --link-color: #003D70;
+  --link-color: #0088A0;
   --text-color: #262626;
   --white-color: #ffffff;
   --radius: 6px;
@@ -24,8 +24,8 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: inherit;
-  text-decoration: none;
   color: var(--link-color);
+  text-decoration: none;
 }
 
 a:hover {
