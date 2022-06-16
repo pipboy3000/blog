@@ -1,6 +1,6 @@
 ---
 layout: post
-title: さよなら！インターネットエクスプローラ
+title: さよなら！インターネットエクスプローラー
 categories: misc
 ---
 
