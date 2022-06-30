@@ -13,7 +13,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.5.0",
@@ -34,17 +34,15 @@
     "unified": "^10.1.2"
   },
   "devDependencies": {
-    "@types/node": "^17.0.31",
+    "@types/node": "^18.0.0",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.3",
     "@types/react-instantsearch-dom": "^6.12.2",
     "@types/remove-markdown": "^0.3.1",
-    "algoliasearch": "^4.13.0",
     "eslint": "^8.15.0",
     "eslint-config-next": "^12.1.6",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.6.1",
-    "react-instantsearch-dom": "^6.23.0",
     "typescript": "^4.6.4"
   }
 }
