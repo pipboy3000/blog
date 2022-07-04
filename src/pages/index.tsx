@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { getAllPosts } from '../lib/api';
 import { generateIndex } from '../lib/algolia';
 import CommonMeta from '../components/CommonMeta';
-import Header from '../components/Header';
 import PostItem from '../components/PostItem';
 import MainLayout from '../components/MainLayout';
 
