@@ -29,8 +29,8 @@ const generateFeedXml = () => {
 	posts.forEach((post) => {
 		feed.addItem({
 			title: post.title,
-			id: post.uri,
-			link: post.uri,
+			id: `${process.env.HOST}${post.uri}`,
+			link: `${process.env.HOST}${post.uri}`,
 			content: post.content,
 			date: new Date(post.date),
 			author: [ author ]
