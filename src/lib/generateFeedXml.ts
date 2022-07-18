@@ -13,10 +13,10 @@ const feed = new Feed({
   id: process.env.HOST || '',
   link: process.env.HOST || '',
 	language: 'ja',
-	generator: 'カウントゼロフィードジェネレーター',
+	generator: 'count0 feed generator',
   image: `${process.env.HOST}/image.png`,
   favicon: `${process.env.HOST}/favicon.ico`,
-  copyright: process.env.COPYWRIGHT || '',
+  copyright: '2011 Masami Asai. All rights reserved.',
   feedLinks: {
     atom: `${process.env.HOST}/feed`
   },
