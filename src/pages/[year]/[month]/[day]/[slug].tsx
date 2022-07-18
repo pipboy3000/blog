@@ -1,12 +1,10 @@
 import { NextPage, InferGetStaticPropsType, GetStaticPropsContext } from 'next';
 import { useRouter } from 'next/router';
-import Head from 'next/head';
 import ErrorPage from 'next/error';
 import mdToHtml from '../../../../lib/mdToHtml';
 import { getAllPosts, getPostByPostPath } from '../../../../lib/api';
-import MainLayout from '../../../../components/MainLayout';
 import Article from '../../../../components/Article';
-import CommonMeta from '../../../../components/CommonMeta';
+import PageLayout from '../../../../components/PageLayout';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -53,19 +51,13 @@ const Post: NextPage<Props> = ({ post }) => {
   }
 
   return (
-    <>
-      <Head>
-        <title>{post.title} - count0.org</title>
-        <CommonMeta />
-      </Head>
-      <MainLayout>
-        <Article
-          title={post.title}
-          published_at={post.date}
-          content={post.content}
-        ></Article>
-      </MainLayout>
-    </>
+    <PageLayout title={post?.title}>
+      <Article
+        title={post.title}
+        published_at={post.date}
+        content={post.content}
+      ></Article>
+    </PageLayout>
   );
 };
 

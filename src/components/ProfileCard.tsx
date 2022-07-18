@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './ProfileCard.module.css';
 import Image from 'next/image';
+import Link from 'next/link'
 
 const ProfileCard: React.FC = () => {
   return (
@@ -19,17 +20,20 @@ const ProfileCard: React.FC = () => {
         </div>
       </div>
 
-          <div className={styles.description}>
-            だいたいゲーム。だいたいsteamなフリーランスのプログラマー/ドローンパイロット
-          </div>
-          <div className={styles.links}>
-            <a href="https://twitter.com/count0" className={styles.link}>
-              Twitter
-            </a>
-            <a href="https://github.com/pipboy3000" className={styles.link}>
-              GitHub
-            </a>
-          </div>
+      <div className={styles.description}>
+        だいたいゲーム。だいたいsteamなフリーランスのプログラマー/ドローンパイロット
+      </div>
+      <div className={styles.links}>
+        <Link href="/about">
+          <a className={styles.link}>自己紹介</a>
+        </Link>
+        <a href="https://twitter.com/count0" className={styles.link}>
+          Twitter
+        </a>
+        <a href="https://github.com/pipboy3000" className={styles.link}>
+          GitHub
+        </a>
+      </div>
     </div>
   );
 };

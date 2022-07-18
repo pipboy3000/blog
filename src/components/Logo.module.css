@@ -1,0 +1,66 @@
+.container {
+  display: inline-block;
+}
+
+.logo {
+  width: 71px;
+  height: 41.5px;
+  display: block;
+  fill: var(--text-color);
+}
+
+.glitchContainer {
+  position: relative;
+}
+
+.glitch {
+  z-index: 3;
+  position: relative;
+}
+
+.glitch:nth-child(2),
+.glitch:nth-child(3) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.glitch:nth-child(2) {
+  left: 2px;
+  fill: var(--glitch-color-1);
+  z-index: 1;
+  animation: distort_svg 2s linear infinite;
+}
+
+.glitch:nth-child(3) {
+  left: -2px;
+  fill: var(--glitch-color-2);
+  z-index: 2;
+  animation: distort_svg 2s linear reverse infinite;
+}
+
+.glitchContainer:hover .glitch:nth-child(2),
+.glitchContainer:hover .glitch:nth-child(3) {
+  animation-duration: 0.3s;
+}
+
+@keyframes distort_svg {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -3px;
+  }
+  40% {
+    left: -2px;
+  }
+  60% {
+    left: 0px;
+  }
+  80% {
+    left: 2px;
+  }
+  to {
+    left: 3px;
+  }
+}

@@ -3,6 +3,8 @@
   --link-color: #0088A0;
   --text-color: #262626;
   --white-color: #ffffff;
+  --glitch-color-1: #e91e63;
+  --glitch-color-2: #03a9f4;
   --radius: 6px;
   --small-radius: 4px;
 }
@@ -54,4 +56,69 @@ table {
 
 td, th {
   padding: 0.5rem;
+}
+
+code {
+  display: inline-block;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  background-color: #ececec;
+  border-radius: 4px;
+}
+
+.glitch {
+  position: relative;
+  display: inline-block;
+  color: black;
+  z-index: 1;
+}
+
+.glitch:before,
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  left: 0;
+  top: 0;
+}
+
+.glitch:before {
+  color: var(--glitch-color-1);
+  animation: distort 2s linear infinite;
+  z-index: -1;
+}
+
+.glitch:after {
+  color: var(--glitch-color-2);
+  animation: distort 1.5s linear reverse infinite;
+  z-index: -2;
+}
+
+.glitch:hover:before,
+.glitch:hover:after {
+  content: none;
+  animation: none;
+}
+
+
+@keyframes distort {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateX(-2px);
+  }
+  40% {
+    transform: translateX(-1px);
+  }
+  60% {
+    transform: translate(0);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  to {
+    transform: translateX(1px);
+  }
 }
