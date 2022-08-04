@@ -5,6 +5,7 @@ import mdToHtml from '../../../../lib/mdToHtml';
 import { getAllPosts, getPostByPostPath } from '../../../../lib/api';
 import Article from '../../../../components/Article';
 import PageLayout from '../../../../components/PageLayout';
+import Alert from '../../../../components/Alert';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -56,6 +57,7 @@ const Post: NextPage<Props> = ({ post }) => {
         title={post.title}
         published_at={post.date}
         content={post.content}
+        alert={post.alert}
       ></Article>
     </PageLayout>
   );

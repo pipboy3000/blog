@@ -9,6 +9,7 @@ export interface Post {
 	date: string
 	uri: string
 	meta: { [key: string]: any}
+	alert?: string
 }
 
 const postsDirectory = path.join(process.cwd(), 'src', 'posts');
@@ -35,9 +36,10 @@ export function getPostByPostPath(postPath: string) {
 	const date = `${year}-${month}-${day}`
 	const uri = `/${date.replace(/-/g, '/')}/${slug}`
 	const title = meta.title
+	const alert = meta.alert || ''
 
 	const post: Post = {
-		slug, date, uri, title, content, meta
+		slug, date, uri, title, content, meta, alert
 	}
 
 	return post
