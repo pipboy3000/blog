@@ -10,8 +10,8 @@ interface Props {
 const PostItem: React.FC<Props> = ({ post }) => {
   return (
     <div className={styles.container}>
-      <Link href={post.uri}>
-        <a className={styles.title}>{post.title}</a>
+      <Link href={post.uri} className={styles.title}>
+        {post.title}
       </Link>
       <div className={styles.date}>{post.date}</div>
     </div>
