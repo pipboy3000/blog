@@ -25,7 +25,7 @@ const Article: React.FC<Props> = ({ title, published_at, content, alert }) => {
       ></div>
       <div className={styles.backToTop}>
         <Link href="/">
-          <a>一覧へ戻る</a>
+          一覧へ戻る
         </Link>
       </div>
       <div className={styles.author}>

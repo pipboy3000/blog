@@ -25,11 +25,9 @@ const algoliaSetitngs = {
 const Hit: React.FC<{ hit: any }> = ({ hit }) => {
   return (
     <Link href={hit.url}>
-      <a>
-        <div className="hitName">
-          <Highlight attribute="title" tagName="span" hit={hit} />
-        </div>
-      </a>
+      <div className="hitName">
+        <Highlight attribute="title" tagName="span" hit={hit} />
+      </div>
     </Link>
   );
 };

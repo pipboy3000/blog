@@ -3,8 +3,6 @@ import { getAllPosts } from '../lib/api';
 import { generateIndex } from '../lib/algolia';
 import PostItem from '../components/PostItem';
 import PageLayout from '../components/PageLayout';
-import Link from 'next/link';
-import ProfileCard from '../components/ProfileCard';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 

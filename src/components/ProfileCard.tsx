@@ -24,8 +24,8 @@ const ProfileCard: React.FC = () => {
         だいたいゲーム。だいたいsteamなフリーランスのプログラマー/ドローンパイロット
       </div>
       <div className={styles.links}>
-        <Link href="/about">
-          <a className={styles.link}>自己紹介</a>
+        <Link href="/about" className={styles.link}>
+          自己紹介
         </Link>
         <a href="https://twitter.com/count0" className={styles.link}>
           Twitter
