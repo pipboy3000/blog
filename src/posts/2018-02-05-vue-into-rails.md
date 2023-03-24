@@ -32,7 +32,7 @@ webpackのエントリーポイントは`app/javascript/packs/main.js`とした�
 
 Vue.jsはコンパイラ付きの完全版を使い、Turbolinksと共存させたいので、[vue-turbolinks][vue-turbolinks]を使う。`turbolinks:load`イベントでVueコンポーネントをマウントする。コンポーネントのマウント先はViewテンプレートに記述したIDになる。
 
-``` slim
+```
 / RailsのViewテンプレート.slim
 #mount-point
 ```
@@ -67,7 +67,7 @@ document.addEventListener('turbolinks:load', () => {
 以下のようにRailsのコントローラーから渡された変数をVue.jsのコンポーネントに受け渡すことができる。
 
 
-``` slim
+```
 / RailsのViewテンプレート.slim
 #mount-point
   component-a(some-prop=@item.id)
@@ -99,7 +99,7 @@ document.addEventListener('turbolinks:load', () => {
 
 RailsということでActionView::FormHelperも使える。こんなこともできるが、これは横着である。
 
-``` slim
+```
 / RailsのViewテンプレート.slim
 = form_with model: Item.new do |f|
   .form-group#mount-point

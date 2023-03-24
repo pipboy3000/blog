@@ -90,7 +90,7 @@ end
 
 テンプレートは`SRCDIR/archive/index.html`に設置します。使える変数は`paginator`を筆頭に[公式のドキュメント][jekyll-pagination-doc]と同じです。
 
-``` slim
+```
 {% raw %}
 ---
 layout: default
