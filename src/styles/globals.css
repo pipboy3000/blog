@@ -20,6 +20,10 @@ body {
   font-feature-settings: "palt";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-color);
 }
@@ -64,6 +68,13 @@ code {
   padding-right: 0.25rem;
   background-color: #ececec;
   border-radius: 4px;
+}
+
+pre > code {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  
+  overflow: scroll;
 }
 
 .glitch {
